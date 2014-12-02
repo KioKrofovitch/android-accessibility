@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AccessibilityTest</string>
+    <string name="clickable_text_view">This is a clickable TextView</string>
+    <string name="action_settings">Settings</string>
+    <string name="clickable_button">This is a clickable Button</string>
+    <string name="hidden_text">This was a hidden TextView</string>
+    <string name="toggle_visibility">Toggle Visibility</string>
+    <string name="show_more_android_robots">Show or hide extra Android Robots</string>
+    <string name="android_robot">Android Robot</string>
+    <string name="now_showing_robots">Now showing more robots</string>
+
+</resources>
