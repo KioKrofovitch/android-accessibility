@@ -8,7 +8,10 @@
     <string name="hidden_text">This was a hidden TextView</string>
     <string name="toggle_visibility">Toggle Visibility</string>
     <string name="show_more_android_robots">Show or hide extra Android Robots</string>
-    <string name="android_robot">Android Robot</string>
+    <string name="android_robot_1">Android Robot 1</string>
+    <string name="android_robot_2">Android Robot 2</string>
+    <string name="android_robot_3">Android Robot 3</string>
+    <string name="android_robot_4">Android Robot 4</string>
     <string name="now_showing_robots">Now showing more robots</string>
 
 </resources>
