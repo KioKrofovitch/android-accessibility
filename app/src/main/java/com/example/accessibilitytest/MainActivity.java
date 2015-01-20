@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
 
         mAndroidImages = (LinearLayout) findViewById(R.id.layout_android_images_robots);
 
-        ImageButton androidRobotsToggleButton = (ImageButton) findViewById(R.id.image_button_android_robot);
+        ImageButton androidRobotsToggleButton = (ImageButton) findViewById(R.id.image_button_pokeball);
         androidRobotsToggleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,6 +70,12 @@ public class MainActivity extends Activity {
                 }
             }
         });
+
+        // Make sure text is read on the *layout* for VI users, not on individual textViews
+//        ViewCompat.setImportantForAccessibility(mTrueCostOfItem1, ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_NO);
+//        ViewCompat.setImportantForAccessibility(mTrueCostOfItem2, ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_NO);
+//        mTrueCostLayout.setContentDescription(trueCostString1 + trueCost);
+//        mTrueCostLayout.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED);
     }
 
 

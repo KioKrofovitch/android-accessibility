@@ -15,50 +15,57 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/image_button_android_robot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/show_more_android_robots"
-            android:src="@drawable/ic_launcher" />
+            android:id="@+id/image_button_pokeball"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/show_pokemon"
+            android:src="@drawable/pokeball_closed" />
 
         <LinearLayout
             android:id="@+id/layout_android_images_robots"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/now_showing_robots"
+            android:contentDescription="@string/now_showing_pokemon"
             android:orientation="horizontal"
-
-
-            android:visibility="gone">
+            android:visibility="visible">
 
             <ImageView
-                android:id="@+id/image_view_android_robot_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/android_robot_1"
-                android:src="@drawable/ic_launcher" />
+                android:id="@+id/image_view_charmander"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/charmander"
+                android:src="@drawable/charmander" />
 
             <ImageView
-                android:id="@+id/image_view_android_robot_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/image_view_bulbasaur"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
-                android:contentDescription="@string/android_robot_2"
-                android:src="@drawable/ic_launcher" />
+                android:contentDescription="@string/bulbasaur"
+                android:src="@drawable/bulbasaur" />
 
             <ImageView
-                android:id="@+id/image_view_android_robot_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/android_robot_3"
-                android:src="@drawable/ic_launcher" />
+                android:id="@+id/image_view_squirtle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/squirtle"
+                android:src="@drawable/squirtle" />
 
             <ImageView
-                android:id="@+id/image_view_android_robot_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/android_robot_4"
-                android:src="@drawable/ic_launcher" />
+                android:id="@+id/image_view_pikachu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/pikachu"
+                android:src="@drawable/pikachu" />
+
+            <ImageView
+                android:id="@+id/image_view_jigglypuff"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/jigglypuff"
+                android:src="@drawable/jigglypuff" />
 
         </LinearLayout>
     </LinearLayout>
@@ -70,6 +77,7 @@
         android:layout_below="@id/layout_android_robots"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
+        android:contentDescription="@string/this_text_is_different"
         android:text="@string/clickable_text_view"
         android:textSize="20sp" />
 
