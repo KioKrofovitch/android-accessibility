@@ -24,12 +24,12 @@
             android:src="@drawable/pokeball_closed" />
 
         <LinearLayout
-            android:id="@+id/layout_android_images_robots"
+            android:id="@+id/layout_all_pokemon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="@string/now_showing_pokemon"
             android:orientation="horizontal"
-            android:visibility="visible">
+            android:visibility="gone">
 
             <ImageView
                 android:id="@+id/image_view_charmander"
@@ -81,31 +81,33 @@
         android:text="@string/clickable_text_view"
         android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/button_clickable"
+    <LinearLayout
+        android:id="@+id/layout_buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_view_clickable"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
-        android:text="@string/clickable_button"
-        android:textSize="20sp" />
+        android:orientation="horizontal"
+        android:layout_below="@id/text_view_clickable">
 
-    <Button
-        android:id="@+id/button_toggle_visibility"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button_clickable"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
-        android:text="@string/toggle_visibility"
-        android:textSize="20sp" />
+        <Button
+            android:id="@+id/button_clickable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/this_is_a_button"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_toggle_visibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toggle_visibility"
+            android:textSize="20sp" />
+        </LinearLayout>
 
     <TextView
         android:id="@+id/text_view_hidden"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/button_toggle_visibility"
+        android:layout_below="@id/layout_buttons"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
         android:text="@string/hidden_text"

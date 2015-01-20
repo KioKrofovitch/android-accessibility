@@ -15,8 +15,9 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
+    private ImageButton mPokemonToggleButton;
     private TextView mHiddenTextView;
-    private LinearLayout mAndroidImages;
+    private LinearLayout mAllPokemon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,27 +56,26 @@ public class MainActivity extends Activity {
             }
         });
 
-        mAndroidImages = (LinearLayout) findViewById(R.id.layout_android_images_robots);
+        mAllPokemon = (LinearLayout) findViewById(R.id.layout_all_pokemon);
 
-        ImageButton androidRobotsToggleButton = (ImageButton) findViewById(R.id.image_button_pokeball);
-        androidRobotsToggleButton.setOnClickListener(new View.OnClickListener() {
+        mPokemonToggleButton = (ImageButton) findViewById(R.id.image_button_pokeball);
+        mPokemonToggleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mAndroidImages.getVisibility() == View.VISIBLE){
-                    mAndroidImages.setVisibility(View.GONE);
+                if(mAllPokemon.getVisibility() == View.VISIBLE){
+                    mAllPokemon.setVisibility(View.GONE);
+                    mPokemonToggleButton.setImageResource(R.drawable.pokeball_closed);
+                    mPokemonToggleButton.setContentDescription(getString(R.string.show_pokemon));
                 }
                 else {
-                    mAndroidImages.setVisibility(View.VISIBLE);
-                    mAndroidImages.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED);
+                    mAllPokemon.setVisibility(View.VISIBLE);
+                    mAllPokemon.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED);
+                    mPokemonToggleButton.setImageResource(R.drawable.pokeball_open);
+                    mPokemonToggleButton.setContentDescription(getString(R.string.hide_pokemon));
                 }
             }
         });
 
-        // Make sure text is read on the *layout* for VI users, not on individual textViews
-//        ViewCompat.setImportantForAccessibility(mTrueCostOfItem1, ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_NO);
-//        ViewCompat.setImportantForAccessibility(mTrueCostOfItem2, ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_NO);
-//        mTrueCostLayout.setContentDescription(trueCostString1 + trueCost);
-//        mTrueCostLayout.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED);
     }
 
 
