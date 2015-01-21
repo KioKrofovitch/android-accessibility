@@ -1,38 +1,46 @@
 package com.example.accessibilitytest;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.accessibility.AccessibilityEvent;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 
-public class MainActivity extends Activity {
+public class TextExampleActivity extends Activity {
+
+    private TextView mHiddenTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_text_example);
 
-        // TextView Examples
-        Button textExampleButton = (Button)findViewById(R.id.button_textview_example);
-        textExampleButton.setOnClickListener(new View.OnClickListener() {
+        TextView clickTextView = (TextView) findViewById(R.id.text_view_clickable);
+        clickTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), TextExampleActivity.class);
-                startActivity(intent);
+                Toast.makeText(getApplicationContext(), "You clicked the TextView", Toast.LENGTH_SHORT).show();
             }
         });
 
-        // ImageView Examples
-        Button imageExampleButton = (Button)findViewById(R.id.button_imageview_example);
-        imageExampleButton.setOnClickListener(new View.OnClickListener() {
+        mHiddenTextView = (TextView) findViewById(R.id.text_view_hidden);
+
+        Button visibilityToggleButton = (Button) findViewById(R.id.button_toggle_visibility);
+        visibilityToggleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ImageExampleActivity.class);
-                startActivity(intent);
+                if(mHiddenTextView.getVisibility() == View.VISIBLE){
+                    mHiddenTextView.setVisibility(View.GONE);
+                }
+                else {
+                    mHiddenTextView.setVisibility(View.VISIBLE);
+                    mHiddenTextView.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED);
+                }
             }
         });
 

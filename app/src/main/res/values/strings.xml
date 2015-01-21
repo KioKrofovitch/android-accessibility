@@ -2,6 +2,18 @@
 <resources>
 
     <string name="app_name">AccessibilityTest</string>
+
+    <string name="textview_example">TextView Examples</string>
+
+    <string name="imageview_example">ImageView Examples</string>
+    <string name="what_type_of_pokemon">What type of Pokemon is this?</string>
+    <string name="reveal_answer">Reveal Answer</string>
+    <string name="hide_answer">Hide Answer</string>
+    <string name="bulbasaur_is_dual_type">Bulbasaur is dual-type Grass and Poison</string>
+
+    <string name="image_button_example">Image Examples</string>
+    <string name="layout_example">Layout Examples</string>
+
     <string name="clickable_text_view">This is a clickable TextView</string>
     <string name="this_text_is_different">This TalkBack text is different</string>
     <string name="action_settings">Settings</string>

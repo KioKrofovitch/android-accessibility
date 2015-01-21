@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/what_type_of_pokemon"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/image_bulbasaur_quiz"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/text_question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/bulbasaur"
+        android:src="@drawable/bulbasaur" />
+
+    <Button
+        android:id="@+id/button_reveal_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_bulbasaur_quiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/reveal_answer" />
+
+    <TextView
+        android:id="@+id/text_quiz_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_reveal_answer"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="30dp"
+        android:text="@string/bulbasaur_is_dual_type"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/layout_balloon_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_quiz_answer"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/image_border_1"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ballons" />
+
+        <ImageView
+            android:id="@+id/image_border_2"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ballons" />
+
+        <ImageView
+            android:id="@+id/image_border_3"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ballons" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_show_hide_pokemon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_balloon_border"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/image_button_pokeball"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/show_pokemon"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pokeball_closed" />
+
+        <LinearLayout
+            android:id="@+id/layout_all_pokemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/now_showing_pokemon"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/image_view_charmander"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/charmander"
+                android:src="@drawable/charmander" />
+
+            <ImageView
+                android:id="@+id/image_view_bulbasaur"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/bulbasaur"
+                android:src="@drawable/bulbasaur" />
+
+            <ImageView
+                android:id="@+id/image_view_squirtle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/squirtle"
+                android:src="@drawable/squirtle" />
+
+            <ImageView
+                android:id="@+id/image_view_pikachu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/pikachu"
+                android:src="@drawable/pikachu" />
+
+            <ImageView
+                android:id="@+id/image_view_jigglypuff"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/jigglypuff"
+                android:src="@drawable/jigglypuff" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
