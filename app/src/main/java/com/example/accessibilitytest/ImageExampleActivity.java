@@ -42,7 +42,6 @@ public class ImageExampleActivity extends Activity {
         });
 
         mAllPokemon = (LinearLayout) findViewById(R.id.layout_all_pokemon);
-
         mPokemonToggleButton = (ImageButton) findViewById(R.id.image_button_pokeball);
         mPokemonToggleButton.setOnClickListener(new View.OnClickListener() {
             @Override

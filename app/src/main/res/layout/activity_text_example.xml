@@ -14,15 +14,33 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
-        android:contentDescription="@string/this_text_is_different"
         android:text="@string/clickable_text_view"
         android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_view_different"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_clickable"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/monday"
+        android:text="@string/mon"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edit_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_different"
+        android:hint="@string/type_here"/>
 
     <Button
         android:id="@+id/button_toggle_visibility"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_view_clickable"
+        android:layout_below="@id/edit_demo"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         android:text="@string/toggle_visibility"
         android:textSize="20sp" />
@@ -37,12 +55,5 @@
         android:text="@string/hidden_text"
         android:textSize="20sp"
         android:visibility="invisible" />
-
-    <EditText
-        android:id="@+id/edit_text_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_view_hidden"
-        android:hint="@string/type_here"/>
 
 </RelativeLayout>

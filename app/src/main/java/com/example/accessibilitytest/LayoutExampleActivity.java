@@ -29,11 +29,16 @@ public class LayoutExampleActivity extends Activity {
         mTextItem = (TextView) findViewById(R.id.text_view_item);
 
         // Note you must include v4 to use this.
-        // Make sure text is read on the *layout* for VI users, not on individual textViews
-        ViewCompat.setImportantForAccessibility(mTextReadMe, ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_NO);
-        ViewCompat.setImportantForAccessibility(mTextAsA, ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_NO);
-        ViewCompat.setImportantForAccessibility(mTextSingle, ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_NO);
-        ViewCompat.setImportantForAccessibility(mTextItem, ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_NO);
+        // Make sure text is read on the *layout* for VI users, not on
+        //    individual textViews
+        ViewCompat.setImportantForAccessibility(
+                mTextReadMe, ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_NO);
+        ViewCompat.setImportantForAccessibility(
+                mTextAsA, ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_NO);
+        ViewCompat.setImportantForAccessibility(
+                mTextSingle, ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_NO);
+        ViewCompat.setImportantForAccessibility(
+                mTextItem, ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_NO);
 
         mLayoutAllText.setContentDescription(
                 mTextReadMe.getText().toString() + " " +

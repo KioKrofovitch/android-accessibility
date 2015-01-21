@@ -5,6 +5,8 @@
 
     <string name="textview_example">TextView Examples</string>
     <string name="type_here">Type Here</string>
+    <string name="mon">MON</string>
+    <string name="monday">Monday</string>
 
     <string name="imageview_example">ImageView Examples</string>
     <string name="what_type_of_pokemon">What type of Pokemon is this?</string>
