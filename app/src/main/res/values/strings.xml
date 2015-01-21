@@ -12,8 +12,11 @@
     <string name="hide_answer">Hide Answer</string>
     <string name="bulbasaur_is_dual_type">Bulbasaur is dual-type Grass and Poison</string>
 
-    <string name="image_button_example">Image Examples</string>
     <string name="layout_example">Layout Examples</string>
+    <string name="read_me">Read me</string>
+    <string name="as_a">as a</string>
+    <string name="single">single</string>
+    <string name="item">item.</string>
 
     <string name="clickable_text_view">This is a clickable TextView</string>
     <string name="this_text_is_different">This TalkBack text is different</string>

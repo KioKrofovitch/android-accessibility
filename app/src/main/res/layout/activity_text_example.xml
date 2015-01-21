@@ -12,7 +12,6 @@
         android:id="@+id/text_view_clickable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/layout_android_robots"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
         android:contentDescription="@string/this_text_is_different"

@@ -36,6 +36,16 @@ public class MainActivity extends Activity {
             }
         });
 
+        // Layout Examples
+        Button layoutExampleButton = (Button)findViewById(R.id.button_layout_example);
+        layoutExampleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LayoutExampleActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 

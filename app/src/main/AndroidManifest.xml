@@ -30,6 +30,12 @@
             android:screenOrientation="portrait">
         </activity>
 
+        <activity
+            android:name=".LayoutExampleActivity"
+            android:label="@string/layout_example"
+            android:screenOrientation="portrait">
+        </activity>
+
     </application>
 
 </manifest>

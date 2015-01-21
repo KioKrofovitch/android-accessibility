@@ -24,18 +24,10 @@
         android:text="@string/imageview_example" />
 
     <Button
-        android:id="@+id/button_example_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/image_button_example" />
-
-    <Button
-        android:id="@+id/button_example_4"
+        android:id="@+id/button_layout_example"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/layout_example" />
-
 
 </LinearLayout>
