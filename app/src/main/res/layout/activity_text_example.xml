@@ -37,6 +37,13 @@
         android:layout_margin="10dp"
         android:text="@string/hidden_text"
         android:textSize="20sp"
-        android:visibility="gone" />
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/edit_text_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_hidden"
+        android:hint="@string/type_here"/>
 
 </RelativeLayout>
