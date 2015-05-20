@@ -5,8 +5,17 @@
 
     <string name="textview_example">TextView Examples</string>
     <string name="type_here">Type Here</string>
+
     <string name="mon">MON</string>
     <string name="monday">Monday</string>
+    <string name="tue">TUE</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wed">WED</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thu">THU</string>
+    <string name="thursday">Thursday</string>
+    <string name="fri">FRI</string>
+    <string name="friday">Friday</string>
 
     <string name="imageview_example">ImageView Examples</string>
     <string name="what_type_of_pokemon">What type of Pokemon is this?</string>
@@ -20,7 +29,7 @@
     <string name="single">single</string>
     <string name="item">item.</string>
 
-    <string name="clickable_text_view">This is a clickable TextView</string>
+    <string name="more_options">More Options</string>
     <string name="this_text_is_different">This TalkBack text is different</string>
     <string name="action_settings">Settings</string>
     <string name="this_is_a_button">This is a Button</string>

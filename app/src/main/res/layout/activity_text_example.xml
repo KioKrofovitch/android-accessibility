@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,42 +6,89 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/text_view_clickable"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
-        android:text="@string/clickable_text_view"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/text_view_different"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_view_clickable"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
-        android:contentDescription="@string/monday"
-        android:text="@string/mon"
-        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/edit_demo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_view_different"
-        android:hint="@string/type_here"/>
+        android:layout_marginBottom="@dimen/example_spacing"
+        android:hint="@string/type_here" />
+
+    <LinearLayout
+        android:id="@+id/layout_text_view_different"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/example_spacing"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_view_mon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:contentDescription="@string/monday"
+            android:text="@string/mon"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_view_tues"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:contentDescription="@string/tuesday"
+            android:text="@string/tue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_view_wed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:contentDescription="@string/wednesday"
+            android:text="@string/wed"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_view_thu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:contentDescription="@string/thursday"
+            android:text="@string/thu"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_view_fri"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:contentDescription="@string/friday"
+            android:text="@string/fri"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_clickable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/example_spacing"
+        android:text="@string/more_options"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/button_toggle_visibility"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edit_demo"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/example_spacing"
         android:text="@string/toggle_visibility"
         android:textSize="20sp" />
 
@@ -49,11 +96,10 @@
         android:id="@+id/text_view_hidden"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/button_toggle_visibility"
-        android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
         android:text="@string/hidden_text"
         android:textSize="20sp"
         android:visibility="invisible" />
 
-</RelativeLayout>
+</LinearLayout>

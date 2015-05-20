@@ -10,18 +10,18 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button_textview_example"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/textview_example" />
-
-    <Button
         android:id="@+id/button_imageview_example"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/imageview_example" />
+
+    <Button
+        android:id="@+id/button_textview_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/textview_example" />
 
     <Button
         android:id="@+id/button_layout_example"
