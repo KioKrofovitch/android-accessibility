@@ -1,6 +1,7 @@
 package com.example.accessibilitytest;
 
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -53,7 +54,13 @@ public class ImageExampleActivity extends Activity {
                 }
                 else {
                     mAllPokemon.setVisibility(View.VISIBLE);
-                    mAllPokemon.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED);
+                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                        mAllPokemon.announceForAccessibility(getString(R.string.now_showing_pokemon));
+                    }
+                    else{
+                        mAllPokemon.setContentDescription(getString(R.string.now_showing_pokemon));
+                        mAllPokemon.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED);
+                    }
                     mPokemonToggleButton.setImageResource(R.drawable.pokeball_open);
                     mPokemonToggleButton.setContentDescription(getString(R.string.hide_pokemon));
                 }

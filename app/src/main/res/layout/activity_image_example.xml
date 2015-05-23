@@ -102,7 +102,6 @@
             android:id="@+id/layout_all_pokemon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/now_showing_pokemon"
             android:orientation="horizontal"
             android:visibility="gone">
 
@@ -139,6 +138,7 @@
                 android:id="@+id/image_view_jigglypuff"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:contentDescription="@string/jigglypuff"
                 android:src="@drawable/jigglypuff" />
 
         </LinearLayout>

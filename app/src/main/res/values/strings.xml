@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">AccessibilityTest</string>
+    <string name="app_name">Android Accessibility</string>
 
     <string name="textview_example">TextView Examples</string>
     <string name="type_here">Type Here</string>
