@@ -16,6 +16,16 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Bad Examples
+        Button badExampleButton = (Button) findViewById(R.id.button_bad_example);
+        badExampleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), BadExampleActivity.class);
+                startActivity(intent);
+            }
+        });
+
         // TextView Examples
         Button textExampleButton = (Button)findViewById(R.id.button_textview_example);
         textExampleButton.setOnClickListener(new View.OnClickListener() {

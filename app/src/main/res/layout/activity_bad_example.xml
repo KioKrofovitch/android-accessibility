@@ -7,34 +7,35 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    tools:context="com.example.accessibilitytest.BadExampleActivity">
 
-    <Button
-        android:id="@+id/button_bad_example"
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/example_spacing" />
+
+    <TextView
+        android:id="@+id/text_view_clickable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/bad_examples" />
+        android:layout_marginBottom="@dimen/example_spacing"
+        android:text="@string/more_options"
+        android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/button_imageview_example"
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/imageview_example" />
+        android:layout_marginBottom="@dimen/example_spacing"
+        android:src="@drawable/jigglypuff" />
 
-    <Button
-        android:id="@+id/button_textview_example"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/textview_example" />
-
-    <Button
-        android:id="@+id/button_layout_example"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/layout_example" />
+        android:layout_marginBottom="@dimen/example_spacing"
+        android:src="@drawable/pikachu" />
 
 </LinearLayout>

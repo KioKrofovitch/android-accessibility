@@ -3,8 +3,11 @@
 
     <string name="app_name">Android Accessibility</string>
 
+
+    <string name="bad_examples">Bad Examples</string>
+
     <string name="textview_example">TextView Examples</string>
-    <string name="type_here">Type Here</string>
+    <string name="type_email_here">Type Email Here</string>
 
     <string name="mon">MON</string>
     <string name="monday">Monday</string>
@@ -16,6 +19,9 @@
     <string name="thursday">Thursday</string>
     <string name="fri">FRI</string>
     <string name="friday">Friday</string>
+
+    <string name="show_toast">Show Toast</string>
+    <string name="toast_button_clicked">Yay Droidcon Berlin!</string>
 
     <string name="imageview_example">ImageView Examples</string>
     <string name="what_type_of_pokemon">What type of Pokemon is this?</string>
@@ -45,5 +51,8 @@
     <string name="jigglypuff">Jigglypuff</string>
 
     <string name="now_showing_pokemon">Now showing pokemon</string>
+    <string name="title_activity_bad_example">BadExampleActivity</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>

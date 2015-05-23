@@ -20,11 +20,11 @@ public class TextExampleActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_example);
 
-        TextView clickTextView = (TextView) findViewById(R.id.text_view_clickable);
+        Button clickTextView = (Button) findViewById(R.id.button_show_toast);
         clickTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "You clicked the TextView", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), getString(R.string.toast_button_clicked), Toast.LENGTH_SHORT).show();
             }
         });
 
