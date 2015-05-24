@@ -44,15 +44,31 @@
 
     <string name="show_pokemon">Show Pokemon</string>
     <string name="hide_pokemon">Hide Pokemon</string>
+
+    <string name="now_showing_pokemon">Now showing pokemon</string>
+    <string name="title_activity_bad_example">BadExampleActivity</string>
+
+    <string name="material_example">Material Examples</string>
+
+    <string name="title_activity_material">Material Activity</string>
+    <string name="just_view">This is a card view with no on-click listener.</string>
+    <string name="on_click">This card view layout is identical, except it has an on-click listener.</string>
+    <string name="over_ride_content_desc">This card view has an on-click listener, and a content
+        description set on the entire card.</string>
+
+    <string name="charmander_access_details">Charmander is a fire type pokemon. It is orange in color
+        and has a flaming tail.</string>
+
+    <!-- Pokemon Names -->
     <string name="charmander">Charmander</string>
     <string name="bulbasaur">Bulbasaur</string>
     <string name="squirtle">Squirtle</string>
     <string name="pikachu">Pikachu</string>
     <string name="jigglypuff">Jigglypuff</string>
 
-    <string name="now_showing_pokemon">Now showing pokemon</string>
-    <string name="title_activity_bad_example">BadExampleActivity</string>
-
-    <string name="hello_world">Hello world!</string>
+    <!-- Pokemon Types -->
+    <string name="electric_pokemon">Electric Pokemon</string>
+    <string name="fairy_pokemon">Fairy Pokemon</string>
+    <string name="fire_pokemon">Fire Pokemon</string>
 
 </resources>
