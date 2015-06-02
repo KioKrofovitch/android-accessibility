@@ -6,6 +6,9 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Toast;
 
+import com.getbase.floatingactionbutton.FloatingActionButton;
+import com.getbase.floatingactionbutton.FloatingActionsMenu;
+
 
 public class MaterialActivity extends Activity {
 
@@ -41,6 +44,13 @@ public class MaterialActivity extends Activity {
                 Toast.makeText(MaterialActivity.this, "Yay Charmander!", Toast.LENGTH_LONG).show();
             }
         });
+
+        //Set Fab Sizes to Mini
+        FloatingActionsMenu menu = (FloatingActionsMenu) findViewById(R.id.floating_action_menu);
+        menu.getm
+                ((FloatingActionButton) findViewById(R.id.action_a)).setSize(FloatingActionButton.SIZE_MINI);
+        ((FloatingActionButton) findViewById(R.id.action_b)).setSize(FloatingActionButton.SIZE_MINI);
+        ((FloatingActionButton) findViewById(R.id.action_c)).setSize(FloatingActionButton.SIZE_MINI);
     }
 
 }

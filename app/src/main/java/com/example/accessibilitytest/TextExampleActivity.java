@@ -1,6 +1,7 @@
 package com.example.accessibilitytest;
 
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
@@ -18,6 +19,11 @@ public class TextExampleActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_example);
 
+        mHiddenTextView = (TextView) findViewById(R.id.text_view_hidden);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            mHiddenTextView.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
+        }
+
         Button clickTextView = (Button) findViewById(R.id.button_show_toast);
         clickTextView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,16 +32,13 @@ public class TextExampleActivity extends Activity {
             }
         });
 
-        mHiddenTextView = (TextView) findViewById(R.id.text_view_hidden);
-
         Button visibilityToggleButton = (Button) findViewById(R.id.button_toggle_visibility);
         visibilityToggleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mHiddenTextView.getVisibility() == View.VISIBLE){
+                if (mHiddenTextView.getVisibility() == View.VISIBLE) {
                     mHiddenTextView.setVisibility(View.GONE);
-                }
-                else {
+                } else {
                     mHiddenTextView.setVisibility(View.VISIBLE);
                     mHiddenTextView.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED);
                 }
