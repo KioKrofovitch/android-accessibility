@@ -59,10 +59,8 @@
     <string name="charmander_access_details">Charmander is a fire type pokemon. It is orange in color
         and has a flaming tail.</string>
 
-    <string name="action_a">Action A</string>
-    <string name="action_b">Action B</string>
-    <string name="action_c">Action C</string>
-
+    <string name="floating_action">Floating Action</string>
+    
     <!-- Pokemon Names -->
     <string name="charmander">Charmander</string>
     <string name="bulbasaur">Bulbasaur</string>

@@ -1,13 +1,13 @@
 package com.example.accessibilitytest;
 
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Toast;
 
 import com.getbase.floatingactionbutton.FloatingActionButton;
-import com.getbase.floatingactionbutton.FloatingActionsMenu;
 
 
 public class MaterialActivity extends Activity {
@@ -16,6 +16,12 @@ public class MaterialActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_material);
+
+        // Set Traversal Order for Accessibility so FAB isn't hard to access
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.floating_action_button);
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP_MR1) {
+            fab.setAccessibilityTraversalBefore(R.id.scroll_cards);
+        }
 
         // Pikachu
         CardView pikachuCard = (CardView) findViewById(R.id.card_view_pikachu_on_click);
@@ -45,12 +51,6 @@ public class MaterialActivity extends Activity {
             }
         });
 
-        //Set Fab Sizes to Mini
-        FloatingActionsMenu menu = (FloatingActionsMenu) findViewById(R.id.floating_action_menu);
-        menu.getm
-                ((FloatingActionButton) findViewById(R.id.action_a)).setSize(FloatingActionButton.SIZE_MINI);
-        ((FloatingActionButton) findViewById(R.id.action_b)).setSize(FloatingActionButton.SIZE_MINI);
-        ((FloatingActionButton) findViewById(R.id.action_c)).setSize(FloatingActionButton.SIZE_MINI);
     }
 
 }

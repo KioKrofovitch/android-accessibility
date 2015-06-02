@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_material_examples"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,6 +12,7 @@
     tools:context="com.example.accessibilitytest.MaterialActivity">
 
     <ScrollView
+        android:id="@+id/scroll_cards"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -214,8 +216,8 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.getbase.floatingactionbutton.FloatingActionsMenu
-        android:id="@+id/floating_action_menu"
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -224,38 +226,9 @@
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        fab:fab_addButtonColorNormal="@color/red"
-        fab:fab_addButtonColorPressed="@color/red_pressed"
-        fab:fab_addButtonPlusIconColor="@android:color/white"
-        fab:fab_labelStyle="@style/menu_labels_style">
-
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_a"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/action_a"
-            fab:fab_colorNormal="@color/blue"
-            fab:fab_colorPressed="@color/blue_pressed"
-            fab:fab_title="Action A" />
-
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_b"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/action_b"
-            fab:fab_colorNormal="@color/blue"
-            fab:fab_colorPressed="@color/blue_pressed"
-            fab:fab_title="Action B" />
-
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_c"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/action_c"
-            fab:fab_colorNormal="@color/blue"
-            fab:fab_colorPressed="@color/blue_pressed"
-            fab:fab_title="Action C" />
-
-    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+        android:contentDescription="@string/floating_action"
+        fab:fab_colorNormal="@color/red"
+        fab:fab_colorPressed="@color/red_pressed"
+        fab:fab_icon="@drawable/ic_fab_star" />
 
 </RelativeLayout>
