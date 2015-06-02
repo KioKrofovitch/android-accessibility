@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,148 +9,203 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.accessibilitytest.MaterialActivity">
 
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view_pikachu"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        card_view:cardCornerRadius="4dp">
+        android:orientation="vertical">
 
-        <RelativeLayout
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_pikachu"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="20dp">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="4dp">
 
-            <ImageView
-                android:id="@+id/image_pikachu_pic"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:contentDescription="@null"
-                android:src="@drawable/pikachu" />
-
-            <TextView
-                android:id="@+id/text_pikachu_name"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/image_pikachu_pic"
-                android:paddingLeft="20dp"
-                android:text="@string/pikachu"
-                android:textSize="30sp" />
+                android:layout_height="match_parent"
+                android:padding="20dp">
 
-            <TextView
-                android:id="@+id/text_pikachu_details"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_pikachu_name"
-                android:paddingLeft="95dp"
-                android:textSize="20sp"
-                android:textStyle="italic"
-                android:text="@string/electric_pokemon" />
+                <ImageView
+                    android:id="@+id/image_pikachu_pic"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pikachu" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_pikachu_details"
-                android:paddingLeft="95dp"
-                android:text="@string/just_view" />
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/text_pikachu_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image_pikachu_pic"
+                    android:paddingLeft="20dp"
+                    android:text="@string/pikachu"
+                    android:textSize="30sp" />
 
-    </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/text_pikachu_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_pikachu_name"
+                    android:paddingLeft="95dp"
+                    android:text="@string/electric_pokemon"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
 
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view_jigglypuff"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        card_view:cardCornerRadius="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_pikachu_details"
+                    android:paddingLeft="95dp"
+                    android:text="@string/just_view" />
+            </RelativeLayout>
 
-        <RelativeLayout
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_pikachu_on_click"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="20dp">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="4dp">
 
-            <ImageView
-                android:id="@+id/image_jigglypuff_pic"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:contentDescription="@null"
-                android:src="@drawable/jigglypuff" />
-
-            <TextView
-                android:id="@+id/text_jigglypuff_name"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/image_jigglypuff_pic"
-                android:paddingLeft="20dp"
-                android:text="@string/jigglypuff"
-                android:textSize="30sp" />
+                android:layout_height="match_parent"
+                android:padding="20dp">
 
-            <TextView
-                android:id="@+id/text_jigglypuff_details"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_jigglypuff_name"
-                android:paddingLeft="95dp"
-                android:textSize="20sp"
-                android:textStyle="italic"
-                android:text="@string/fairy_pokemon" />
+                <ImageView
+                    android:id="@+id/image_pikachu_pic_on_click"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/pikachu" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_jigglypuff_details"
-                android:paddingLeft="95dp"
-                android:text="@string/on_click" />
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/text_pikachu_name_on_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image_pikachu_pic_on_click"
+                    android:paddingLeft="20dp"
+                    android:text="@string/pikachu"
+                    android:textSize="30sp" />
 
-    </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/text_pikachu_details_on_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_pikachu_name_on_click"
+                    android:paddingLeft="95dp"
+                    android:text="@string/electric_pokemon"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
 
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view_charmander"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        card_view:cardCornerRadius="4dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_pikachu_details_on_click"
+                    android:paddingLeft="95dp"
+                    android:text="@string/on_click" />
+            </RelativeLayout>
 
-        <RelativeLayout
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_charmander"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="20dp">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="4dp">
 
-            <ImageView
-                android:id="@+id/image_charmander_pic"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:contentDescription="@null"
-                android:src="@drawable/charmander" />
-
-            <TextView
-                android:id="@+id/text_charmander_name"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/image_charmander_pic"
-                android:paddingLeft="20dp"
-                android:text="@string/charmander"
-                android:textSize="30sp" />
+                android:layout_height="match_parent"
+                android:padding="20dp">
 
-            <TextView
-                android:id="@+id/text_charmander_details"
+                <ImageView
+                    android:id="@+id/image_charmander_pic"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/charmander" />
+
+                <TextView
+                    android:id="@+id/text_charmander_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image_charmander_pic"
+                    android:paddingLeft="20dp"
+                    android:text="@string/charmander"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/text_charmander_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_charmander_name"
+                    android:paddingLeft="95dp"
+                    android:text="@string/fire_pokemon"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_charmander_details"
+                    android:paddingLeft="95dp"
+                    android:text="@string/over_ride_content_desc" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_jigglypuff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="4dp">
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_charmander_name"
-                android:paddingLeft="95dp"
-                android:textSize="20sp"
-                android:textStyle="italic"
-                android:text="@string/fire_pokemon" />
+                android:layout_height="match_parent"
+                android:padding="20dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_charmander_details"
-                android:paddingLeft="95dp"
-                android:text="@string/over_ride_content_desc" />
-        </RelativeLayout>
+                <ImageView
+                    android:id="@+id/image_jigglypuff_pic"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/jigglypuff" />
 
-    </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/text_jigglypuff_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image_jigglypuff_pic"
+                    android:paddingLeft="20dp"
+                    android:text="@string/jigglypuff"
+                    android:textSize="30sp" />
 
-</LinearLayout>
+                <TextView
+                    android:id="@+id/text_jigglypuff_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_jigglypuff_name"
+                    android:paddingLeft="95dp"
+                    android:text="@string/fairy_pokemon"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_jigglypuff_details"
+                    android:paddingLeft="95dp"
+                    android:text="@string/veggie_ipsum" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

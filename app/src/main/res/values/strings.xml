@@ -71,4 +71,7 @@
     <string name="fairy_pokemon">Fairy Pokemon</string>
     <string name="fire_pokemon">Fire Pokemon</string>
 
+    <!-- Placeholder Text -->
+    <string name= "veggie_ipsum">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi
+        welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</string>
 </resources>

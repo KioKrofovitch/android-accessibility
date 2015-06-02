@@ -14,6 +14,15 @@ public class MaterialActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_material);
 
+        // Pikachu
+        CardView pikachuCard = (CardView) findViewById(R.id.card_view_pikachu_on_click);
+        pikachuCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MaterialActivity.this, "Yay Pikachu!", Toast.LENGTH_LONG).show();
+            }
+        });
+
         // Jigglypuff
         CardView jigglyPuffCard = (CardView) findViewById(R.id.card_view_jigglypuff);
         jigglyPuffCard.setOnClickListener(new View.OnClickListener() {
