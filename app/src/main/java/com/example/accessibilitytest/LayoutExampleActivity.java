@@ -2,7 +2,9 @@ package com.example.accessibilitytest;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewCompat;
+import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -20,6 +22,10 @@ public class LayoutExampleActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout_example);
 
+        if(getActionBar() != null) {
+            getActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         mLayoutAllText = (LinearLayout)findViewById(R.id.layout_text_formats);
         mTextReadMe = (TextView) findViewById(R.id.text_view_read_me);
         mTextAsA = (TextView) findViewById(R.id.text_view_as_a);
@@ -27,6 +33,17 @@ public class LayoutExampleActivity extends Activity {
         mTextItem = (TextView) findViewById(R.id.text_view_item);
 
         setTextContentDescription();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void setTextContentDescription() {

@@ -1,4 +1,4 @@
-package com.example.accessibilitytest;
+package com.example.accessibilitytest.model;
 
 
 public class PokemonData {

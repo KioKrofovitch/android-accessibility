@@ -21,30 +21,37 @@
             android:name=".BadExampleActivity"
             android:label="@string/bad_examples"
             android:screenOrientation="portrait" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".ImageExampleActivity"
             android:label="@string/imageview_example"
             android:screenOrientation="portrait" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".TextExampleActivity"
             android:label="@string/textview_example"
             android:screenOrientation="portrait" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".LayoutExampleActivity"
             android:label="@string/layout_example"
             android:screenOrientation="portrait" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".MaterialActivity"
             android:label="@string/material_example"
             android:screenOrientation="portrait" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".LostFabActivity"
-            android:label="@string/title_activity_lost_fab" >
+            android:label="@string/lost_fab_example"
+            android:screenOrientation="portrait" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity" />
         </activity>
     </application>
 
