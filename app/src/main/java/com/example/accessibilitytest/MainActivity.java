@@ -54,6 +54,16 @@ public class MainActivity extends Activity {
             }
         });
 
+        // Lost FAB Examples
+        Button lostFabExampleButton = (Button) findViewById(R.id.button_lost_fab_example);
+        lostFabExampleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LostFabActivity.class);
+                startActivity(intent);
+            }
+        });
+
         // Material Design Examples
         Button materialExampleButton = (Button) findViewById(R.id.button_material_example);
         materialExampleButton.setOnClickListener(new View.OnClickListener() {

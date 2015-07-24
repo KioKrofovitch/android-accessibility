@@ -48,6 +48,7 @@
     <string name="now_showing_pokemon">Now showing pokemon</string>
     <string name="title_activity_bad_example">BadExampleActivity</string>
 
+    <string name="lost_fab_example">Lost FAB Example</string>
     <string name="material_example">Material Examples</string>
 
     <string name="title_activity_material">Material Activity</string>
@@ -76,4 +77,7 @@
     <!-- Placeholder Text -->
     <string name= "veggie_ipsum">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi
         welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</string>
+    <string name="title_activity_lost_fab">LostFabActivity</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>

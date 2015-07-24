@@ -42,6 +42,10 @@
             android:label="@string/material_example"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name=".LostFabActivity"
+            android:label="@string/title_activity_lost_fab" >
+        </activity>
     </application>
 
 </manifest>

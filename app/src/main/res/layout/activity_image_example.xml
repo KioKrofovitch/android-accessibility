@@ -53,6 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/text_quiz_answer"
         android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:orientation="horizontal"
         android:paddingBottom="20dp"
         android:paddingTop="20dp">
