@@ -103,4 +103,22 @@
         android:textSize="20sp"
         android:visibility="invisible" />
 
+    <Button
+        android:id="@+id/button_change_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/example_spacing"
+        android:text="@string/change_number"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_view_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/one"
+        android:textSize="35sp" />
+
 </LinearLayout>

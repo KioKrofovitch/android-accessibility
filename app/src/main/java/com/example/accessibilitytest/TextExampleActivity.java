@@ -11,10 +11,13 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Random;
+
 
 public class TextExampleActivity extends Activity {
 
     private TextView mHiddenTextView;
+    private TextView mNumberTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +29,6 @@ public class TextExampleActivity extends Activity {
         }
 
         mHiddenTextView = (TextView) findViewById(R.id.text_view_hidden);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            mHiddenTextView.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
-        }
 
         Button clickTextView = (Button) findViewById(R.id.button_show_toast);
         clickTextView.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +48,23 @@ public class TextExampleActivity extends Activity {
                     mHiddenTextView.setVisibility(View.VISIBLE);
                     mHiddenTextView.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED);
                 }
+            }
+        });
+
+        mNumberTextView = (TextView) findViewById(R.id.text_view_numbers);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            mNumberTextView.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);
+        }
+
+        Button numberUpdateButton = (Button) findViewById(R.id.button_change_number);
+        numberUpdateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Random rand = new Random();
+                int randomNum = rand.nextInt(25);
+                String numString = String.valueOf(randomNum);
+
+                mNumberTextView.setText(numString);
             }
         });
 

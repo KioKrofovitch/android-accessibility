@@ -23,6 +23,9 @@
     <string name="show_toast">Show Toast</string>
     <string name="toast_button_clicked">Yay AnDevCon Boston!</string>
 
+    <string name="change_number">Change Number</string>
+    <string name="one">1</string>
+
     <string name="imageview_example">ImageView Examples</string>
     <string name="what_type_of_pokemon">What type of Pokemon is this?</string>
     <string name="reveal_answer">Reveal Answer</string>
