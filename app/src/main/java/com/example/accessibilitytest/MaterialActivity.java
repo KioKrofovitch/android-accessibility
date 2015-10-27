@@ -8,10 +8,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 
 public class MaterialActivity extends AppCompatActivity {
+
+    RelativeLayout mParentLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,21 +31,22 @@ public class MaterialActivity extends AppCompatActivity {
             fab.setAccessibilityTraversalBefore(R.id.scroll_cards);
         }
 
+        // Fab
+        mParentLayout = (RelativeLayout) findViewById(R.id.layout_material_examples);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getBaseContext(), getString(R.string.toast_button_clicked), Toast.LENGTH_SHORT)
+                        .show();
+            }
+        });
+
         // Pikachu
         CardView pikachuCard = (CardView) findViewById(R.id.card_view_pikachu_on_click);
         pikachuCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MaterialActivity.this, "Yay Pikachu!", Toast.LENGTH_LONG).show();
-            }
-        });
-
-        // Jigglypuff
-        CardView jigglyPuffCard = (CardView) findViewById(R.id.card_view_jigglypuff);
-        jigglyPuffCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MaterialActivity.this, "Yay Jigglypuff!", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -53,6 +57,15 @@ public class MaterialActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MaterialActivity.this, "Yay Charmander!", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        // Jigglypuff
+        CardView jigglyPuffCard = (CardView) findViewById(R.id.card_view_jigglypuff);
+        jigglyPuffCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MaterialActivity.this, "Yay Jigglypuff!", Toast.LENGTH_LONG).show();
             }
         });
     }
