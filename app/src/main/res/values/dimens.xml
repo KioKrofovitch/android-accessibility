@@ -4,5 +4,6 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <dimen name="example_spacing">40dp</dimen>
+    <dimen name="fab_margin">15dp</dimen>
 
 </resources>

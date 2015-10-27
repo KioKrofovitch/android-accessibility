@@ -1,15 +1,15 @@
 package com.example.accessibilitytest;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
-public class LayoutExampleActivity extends Activity {
+public class LayoutExampleActivity extends AppCompatActivity {
 
     private LinearLayout mLayoutAllText;
     private TextView mTextReadMe;

@@ -1,9 +1,9 @@
 package com.example.accessibilitytest;
 
-import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
@@ -14,7 +14,7 @@ import android.widget.Toast;
 import java.util.Random;
 
 
-public class TextExampleActivity extends Activity {
+public class TextExampleActivity extends AppCompatActivity {
 
     private TextView mHiddenTextView;
     private TextView mNumberTextView;
